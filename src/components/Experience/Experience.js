@@ -31,6 +31,8 @@ const JobExperienceBox = ({ title, description, skills }) => {
   const [isHovered, setIsHovered] = useState(false);
   const pillBgColor = useColorModeValue('teal.400', 'rgba(45,212,191,.1)');
   const pillTextColor = useColorModeValue('rgb(255, 255, 255)', 'brightTeal');
+  const titleColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.900');
+  const titleColorOnHover = useColorModeValue('teal.400', 'brightTeal');
   return (
     <Box
       p="5"
@@ -39,7 +41,7 @@ const JobExperienceBox = ({ title, description, skills }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Heading size="md" color={isHovered ? 'teal.400' : 'initial'}>
+      <Heading size="md" color={isHovered ? titleColorOnHover : titleColor}>
         {title}
       </Heading>
       <Text pb={1}>{description}</Text>
@@ -68,33 +70,38 @@ const WorkExperience = () => {
   const arrowAnimation = `${animation} infinite 0.5s`;
   return (
     <Container id="works" maxW="container.md">
-      <Heading fontSize={20} mb={4}>
+      <Heading mb={4} size="4xl">
         Where I&apos;ve Worked at
       </Heading>
 
       <JobExperienceBox
         title="Senior Software Engineer - VeryOn"
         description="Partnered with product development teams to strategize and implement enhancements, solutions, and innovative features, all aimed at elevating safety standards and reliability within the aviation industry. Undertook comprehensive responsibility and ownership for the entire cycle of UI mockups and API integration, spanning from initial development and rigorous testing, through to production deployment, followed by ongoing improvements and troubleshooting."
-        skills={['Angular', 'HTML', 'SCSS', 'TypeScript', 'RxJs', 'NgRx']}
+        skills={['Angular 12+', 'HTML', 'SCSS', 'TypeScript', 'RxJs', 'NgRx', 'C#','MVC','SQL']}
       />
 
       <JobExperienceBox
         title="Senior Software Engineer - RBC Bank"
         description="Designed and implemented reusable and custom UI components leveraging the power of PrimeNG and RBC's component library, strategically enhancing code quality and streamlining the development process for increased efficiency.."
-        skills={['Angular', 'HTML', 'SCSS', 'TypeScript', 'RxJs', 'NGXS']}
+        skills={['Angular 10+', 'HTML', 'Sass', 'TypeScript', 'RxJs', 'NGXS','Unit Testing']}
       />
 
       <JobExperienceBox
-        title="Senior Software Engineer - CIBC Bank"
+        title="Software Engineer - CIBC Bank"
         description="Collaborated with the UI team to meticulously engineer and enhance significant features of CIBC's customer-centric application, thereby elevating the user experience"
-        skills={['Vue.js', 'Vuex', 'SCSS', 'Javascript']}
+        skills={['Vue.js', 'Vuex', 'Javascript','Cypress','HTML','Tailwind Css']}
+      />
+      <JobExperienceBox
+        title="Software Engineer - Home Depot"
+        description="Worked together the dev team to develop a feature which aggregates comprehensive article information, a page intended to assist retail stores in enhancing customer service, order fulfillment, and product sales"
+        skills={['Angular 10', 'HTML', 'SCSS', 'TypeScript', 'RxJs', 'NgRx', 'Accessibity']}
       />
       <JobExperienceBox
         title="Full-Stack Software Engineer - TD Bank"
         description="Collaborated with fellow engineers to design a streamlined online
             credit card application system, with an aim to expedite and simplify
             the application processing experience."
-        skills={['Angular', 'TypeScript', 'SCSS', 'Java', 'Spring MVC']}
+        skills={['Angular 6', 'TypeScript', 'SCSS', 'Java', 'Spring MVC','Spring Framework','Spring Boot','Jsp','Jspf']}
       />
 
       <Box ml={4} my={10}>

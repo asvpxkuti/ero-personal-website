@@ -1,6 +1,6 @@
-import { Box, Button, Container, Link } from '@chakra-ui/react';
-import { EmailIcon } from '@chakra-ui/icons';
+import { Box, Container } from '@chakra-ui/react';
 import ThemeSwitchButton from '../themeSwitchButton';
+import Contact from '../contactMe';
 const Footer = () => {
   return (
     <Container>
@@ -15,13 +15,7 @@ const Footer = () => {
       >
         <ThemeSwitchButton />
       </Box>
-      <Box align="center" my={4}>
-        <Link href="mailto:eroppong@gmail.com">
-          <Button leftIcon={<EmailIcon />} colorScheme="teal">
-            Say Hello
-          </Button>
-        </Link>
-      </Box>
+      <Contact mobile="none" desktop="block" />
       <Box my="100px" align="center" opacity={0.4} fontSize="sm">
         &copy; {new Date().getFullYear()} Emmanuel R. Oppong. All Rights
         Reserved.

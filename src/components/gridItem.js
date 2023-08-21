@@ -44,16 +44,16 @@ const GridItem = ({ gitHubUrl, href, title, photo }) => {
       >
         {isHovered && (
           <>
-            <Link color={gridItemColor} href={gitHubUrl} isExternal>
+            {gitHubUrl && (<Link color={gridItemColor} href={gitHubUrl} isExternal>
               <IconButton
-                cursor="pointer"
-                borderRadius={99}
-                variant="outline"
-                colorScheme={gridItemColor}
-                aria-label="GitHub Link"
-                icon={<FaGithub />}
+                  cursor="pointer"
+                  borderRadius={99}
+                  variant="outline"
+                  colorScheme={gridItemColor}
+                  aria-label="GitHub Link"
+                  icon={<FaGithub/>}
               />
-            </Link>
+            </Link>)}
             {href && (
               <Link color={gridItemColor} href={href} isExternal>
                 <IconButton

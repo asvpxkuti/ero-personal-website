@@ -2,6 +2,7 @@ import { Avatar, Box, Container, Flex, Heading, Text } from '@chakra-ui/react';
 import VoxelComputerLoader from '../voxel-computer-loader';
 import React, { Suspense, lazy } from 'react';
 import ProfileDetail from '../profileDetail';
+import Contact from '../contactMe';
 const LazyVoxelComputer = lazy(() => import('../voxel-computer'));
 
 const ComputerDLG = () => (
@@ -16,7 +17,7 @@ const AboutMe = () => {
         <Heading as="h1" size="3xl">
           Emmanuel Rees Oppong.
         </Heading>
-        <Heading size="1xl" pb={2}>
+        <Heading size="1xl" py={6}>
           I am a full-stack developer based in Canada!
         </Heading>
         <Box my={10}>
@@ -27,7 +28,7 @@ const AboutMe = () => {
               src="/images/emmanuel.jpg"
             />{' '}
           </Box>
-          <Text maxW="600px">
+          <Text maxW="600px" pb={6}>
             Emmanuel is a proficient full-stack software developer who focuses
             particularly on front-end technologies. He brings to the table a
             passion for designing and developing intriguing digital solutions.
@@ -50,6 +51,7 @@ const AboutMe = () => {
           />
         </Box>
       </Flex>
+      <Contact mobile="block" desktop="none" />
       <Flex align="center" justify="center">
         <ComputerDLG />
       </Flex>

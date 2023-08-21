@@ -7,7 +7,7 @@ import {
   MenuButton,
   MenuList,
   Stack,
-  useColorModeValue,
+  useColorModeValue, useDisclosure, CloseButton,
 } from '@chakra-ui/react';
 import React from 'react';
 import Logo from '../Logo/Logo';
@@ -17,6 +17,7 @@ import NavItem from '../NavItem/NavItem';
 
 const Navbar = () => {
   const navBgColour = useColorModeValue('#FFFFFF', '#202023');
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Flex
       as="nav"
@@ -46,7 +47,7 @@ const Navbar = () => {
             display="inline-flex"
             alignItems="center"
             target="_blank"
-            href="https://github.com/asvpxkuti/ero-personal"
+            href="https://github.com/emmanuelrees90/ero-personal-website"
             pl={2}
             style={{ gap: 4 }}
           >
@@ -58,12 +59,18 @@ const Navbar = () => {
 
       <Box display={{ base: 'inline-block', md: 'none' }}>
         <Menu bg={navBgColour}>
-          <MenuButton
-            as={IconButton}
-            aria-label="Navigation Options"
-            icon={<HamburgerIcon />}
-            variant="outline"
-          />
+          {!isOpen ? (
+              <MenuButton
+                  as={IconButton}
+                  aria-label="Navigation Options"
+                  onClick={onOpen}
+                  icon={<HamburgerIcon />}
+                  variant="outline"
+              />
+          ) : (
+              <CloseButton onClick={onClose} />
+          )}
+
           <MenuList>
             <MenuItem as={NavItem} href="/#about">
               About
@@ -76,7 +83,7 @@ const Navbar = () => {
             </MenuItem>
             <MenuItem
               as={NavItem}
-              href="https://github.com/asvpxkuti/ero-personal"
+              href="https://github.com/asvpxkuti/ero-personal-website"
             >
               View Source
             </MenuItem>

@@ -8,31 +8,31 @@ const Experience = () => {
       <Heading mb={6} size="4xl">
         Some Things I've Built
       </Heading>
-      <SimpleGrid columns={[1, 2, 2]} gap={6}>
+      <SimpleGrid columns={[1, 2, 2]} gap={10}>
         <GridItem
           title="Restaurant Landing Page"
           photo={thumbNailPhoto}
-          gitHubUrl="https://github.com/asvpxkuti/ero-restaurant"
+          gitHubUrl="https://github.com/emmanuelrees90/ero-restaurant"
           href="https://www.ero-restaurant.com/"
+        />
+        <GridItem
+          title="Spotify Connected App"
+          photo={thumbNailPhoto}
+          gitHubUrl="https://github.com/emmanuelrees90/ero-spotify-app"
+          href="https://ero-spotify-app-14b6ac45364e.herokuapp.com/"
         />
         <GridItem
           title="Chat GPT-3 Landing Page"
           photo={thumbNailPhoto}
-          gitHubUrl="https://github.com/asvpxkuti/ero-chatgpt"
+          gitHubUrl="https://github.com/emmanuelrees90/ero-chatgpt/"
           href=""
         />
-        <GridItem
-          title="Social App Demo"
-          photo={thumbNailPhoto}
-          gitHubUrl="https://github.com/asvpxkuti/socialapp"
-          href=""
-        />
-        <GridItem
-          title="Junk Go Demo App"
-          photo={thumbNailPhoto}
-          gitHubUrl="https://github.com/asvpxkuti/junkgo"
-          href=""
-        />
+          <GridItem
+              title="AWS To do App"
+              photo={thumbNailPhoto}
+              gitHubUrl=""
+              href="https://dev.dh10f1bagn1ji.amplifyapp.com"
+          />
       </SimpleGrid>
     </Container>
   );
