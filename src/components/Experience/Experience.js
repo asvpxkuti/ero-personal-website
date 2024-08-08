@@ -75,33 +75,39 @@ const WorkExperience = () => {
       </Heading>
 
       <JobExperienceBox
-        title="Senior Software Engineer - VeryOn"
+        title="Senior Frontend Developer - Citi Bank"
+        description="Partnered with product development teams to strategize and implement enhancements, solutions, and innovative features, all aimed at elevating safety standards and reliability within the aviation industry. Undertook comprehensive responsibility and ownership for the entire cycle of UI mockups and API integration, spanning from initial development and rigorous testing, through to production deployment, followed by ongoing improvements and troubleshooting."
+        skills={['Angular 14-16', 'HTML', 'SCSS', 'TypeScript', 'RxJs', 'NgRx','Agile','Git']}
+      />
+
+      <JobExperienceBox
+        title="Senior Frontend Developer - VeryOn"
         description="Partnered with product development teams to strategize and implement enhancements, solutions, and innovative features, all aimed at elevating safety standards and reliability within the aviation industry. Undertook comprehensive responsibility and ownership for the entire cycle of UI mockups and API integration, spanning from initial development and rigorous testing, through to production deployment, followed by ongoing improvements and troubleshooting."
         skills={['Angular 12+', 'HTML', 'SCSS', 'TypeScript', 'RxJs', 'NgRx', 'C#','MVC','SQL']}
       />
 
       <JobExperienceBox
-        title="Senior Software Engineer - RBC Bank"
+        title="Senior Frontend Developer - RBC Bank"
         description="Designed and implemented reusable and custom UI components leveraging the power of PrimeNG and RBC's component library, strategically enhancing code quality and streamlining the development process for increased efficiency.."
-        skills={['Angular 10+', 'HTML', 'Sass', 'TypeScript', 'RxJs', 'NGXS','Unit Testing']}
+        skills={['Angular 10+', 'HTML', 'Sass', 'NPM', 'TypeScript', 'RxJs', 'NGXS','Unit Testing','Jira']}
       />
 
       <JobExperienceBox
-        title="Software Engineer - CIBC Bank"
+        title="Senior Frontend Developer - CIBC Bank"
         description="Collaborated with the UI team to meticulously engineer and enhance significant features of CIBC's customer-centric application, thereby elevating the user experience"
-        skills={['Vue.js', 'Vuex', 'Javascript','Cypress','HTML','Tailwind Css']}
+        skills={['Vue.js', 'Ember', 'Vuex', 'Javascript','Cypress','HTML','Tailwind Css']}
       />
       <JobExperienceBox
-        title="Software Engineer - Home Depot"
+        title="Senior Frontend Developer - Home Depot"
         description="Worked together the dev team to develop a feature which aggregates comprehensive article information, a page intended to assist retail stores in enhancing customer service, order fulfillment, and product sales"
-        skills={['Angular 10', 'HTML', 'SCSS', 'TypeScript', 'RxJs', 'NgRx', 'Accessibity']}
+        skills={['Angular 10','React.js', 'HTML', 'SCSS', 'TypeScript', 'RxJs', 'NgRx', 'Accessibity']}
       />
       <JobExperienceBox
-        title="Full-Stack Software Engineer - TD Bank"
+        title="Software Engineer - TD Bank"
         description="Collaborated with fellow engineers to design a streamlined online
             credit card application system, with an aim to expedite and simplify
             the application processing experience."
-        skills={['Angular 6', 'TypeScript', 'SCSS', 'Java', 'Spring MVC','Spring Framework','Spring Boot','Jsp','Jspf']}
+        skills={['Angular 6', 'TypeScript', 'SCSS', 'Java', 'Spring MVC','Spring Framework','Spring Boot','Jsp','Jspf','WCAG','AODA']}
       />
 
       <Box ml={4} my={10}>

@@ -6,7 +6,7 @@ export default function Logo(props) {
     <Link href="/">
       <Box {...props}>
         <Text fontSize="lg" fontWeight="bold">
-          Emmnauel R. Oppong
+          Emmanuel R. Oppong
         </Text>
       </Box>
     </Link>
